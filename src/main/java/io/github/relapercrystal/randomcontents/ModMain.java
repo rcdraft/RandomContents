@@ -39,12 +39,12 @@ import net.minecraft.item.Items;
 public class ModMain implements ModInitializer {
 
     public static final ItemEssential ESSENTIAL = new ItemEssential(new Item.Settings().group(ItemGroup.MISC));
-    public static final Item BURNESSENTIAL = new Item(new Item.Settings().group(ItemGroup.MISC));
-    public static final BlockEssential BLOCKESSENTIAL = new BlockEssential(FabricBlockSettings.of(Material.GLASS).build().strength(0.3F, 0.3F).nonOpaque());
-    public static final Block COLORPANEL = new Block(FabricBlockSettings.of(Material.WOOL).build());
-    public static final HandGrinder GRINDERHAND = new HandGrinder(new Item.Settings().group(ItemGroup.TOOLS).maxDamage(300));
-    public static final Item ENHANCEDGOLDINGOT = new Item(new Item.Settings().group(ItemGroup.MISC).recipeRemainder(Items.GOLD_INGOT));
-    public static final InvisibleLightSource INVISIBLELIGHT = new InvisibleLightSource(FabricBlockSettings.of(Material.GLASS).nonOpaque().noCollision().breakInstantly().lightLevel(14).build());
+    public static final Item BURNABLE_ESSENTIAL = new Item(new Item.Settings().group(ItemGroup.MISC));
+    public static final BlockEssential ESSENTIAL_BLOCK = new BlockEssential(FabricBlockSettings.of(Material.GLASS).build().strength(0.3F, 0.3F).nonOpaque());
+    public static final Block COLOR_PANEL = new Block(FabricBlockSettings.of(Material.WOOL).build());
+    public static final HandGrinder HAND_GRINDER = new HandGrinder(new Item.Settings().group(ItemGroup.TOOLS).maxDamage(300));
+    public static final Item ENHANCED_GOLD_INGOT = new Item(new Item.Settings().group(ItemGroup.MISC).recipeRemainder(Items.GOLD_INGOT));
+    public static final InvisibleLightSource INVISIBLE_LIGHT = new InvisibleLightSource(FabricBlockSettings.of(Material.GLASS).nonOpaque().noCollision().breakInstantly().lightLevel(14).build());
 
 	@Override
 	public void onInitialize() {
@@ -58,25 +58,25 @@ public class ModMain implements ModInitializer {
         
 
         // Register Burnable Essential as Fuel
-        FuelRegistry.INSTANCE.add(BURNESSENTIAL, 10000);
+        FuelRegistry.INSTANCE.add(BURNABLE_ESSENTIAL, 10000);
     }
 
     // Register Blocks
     public void InitBlock()
     {
-        Registry.register(Registry.BLOCK, new Identifier("randomcontents", "essential_block"), BLOCKESSENTIAL);
-        Registry.register(Registry.ITEM, new Identifier("randomcontents", "essential_block"), new BlockItem(BLOCKESSENTIAL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
-        Registry.register(Registry.BLOCK, new Identifier("randomcontents", "color_panel"), COLORPANEL);
-        Registry.register(Registry.ITEM, new Identifier("randomcontents", "color_panel"), new BlockItem(COLORPANEL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
-        Registry.register(Registry.BLOCK, new Identifier("randomcontents", "invisible_light_source"), INVISIBLELIGHT);
-        Registry.register(Registry.ITEM, new Identifier("randomcontents", "invisible_light_source"), new BlockItem(INVISIBLELIGHT, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        Registry.register(Registry.BLOCK, new Identifier("randomcontents", "essential_block"), ESSENTIAL_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier("randomcontents", "essential_block"), new BlockItem(ESSENTIAL_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        Registry.register(Registry.BLOCK, new Identifier("randomcontents", "color_panel"), COLOR_PANEL);
+        Registry.register(Registry.ITEM, new Identifier("randomcontents", "color_panel"), new BlockItem(COLOR_PANEL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        Registry.register(Registry.BLOCK, new Identifier("randomcontents", "invisible_light_source"), INVISIBLE_LIGHT);
+        Registry.register(Registry.ITEM, new Identifier("randomcontents", "invisible_light_source"), new BlockItem(INVISIBLE_LIGHT, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
     }
 
     public void InitItem()
     {
         Registry.register(Registry.ITEM, new Identifier("randomcontents", "essential"), ESSENTIAL);
-        Registry.register(Registry.ITEM, new Identifier("randomcontents", "burnable_essential"), BURNESSENTIAL);
-        Registry.register(Registry.ITEM, new Identifier("randomcontents", "hand_grinder"), GRINDERHAND);
-        Registry.register(Registry.ITEM, new Identifier("randomcontents", "enhanced_gold_ingot"), ENHANCEDGOLDINGOT);
+        Registry.register(Registry.ITEM, new Identifier("randomcontents", "burnable_essential"), BURNABLE_ESSENTIAL);
+        Registry.register(Registry.ITEM, new Identifier("randomcontents", "hand_grinder"), HAND_GRINDER);
+        Registry.register(Registry.ITEM, new Identifier("randomcontents", "enhanced_gold_ingot"), ENHANCED_GOLD_INGOT);
     }
 }
