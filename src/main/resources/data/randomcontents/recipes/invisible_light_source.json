@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:torch"
+        },
+        {
+            "item": "minecraft:glass"
+        },
+        {
+            "item": "randomcontents:essential"
+        }
+    ],
+    "result": {
+        "item": "randomcontents:invisible_light_source",
+        "count": 8
+    }
+}

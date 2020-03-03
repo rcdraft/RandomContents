@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "randomcontents",
+  "version": "${version}",
+
+  "name": "Random Contents",
+  "description": "Some random contents by RelaperCrystal",
+  "authors": [
+    "RelaperCrystal"
+  ],
+  "contact": {
+    "homepage": "https://relapercrystal.epizy.com",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "GNU GPLv3",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.github.relapercrystal.randomcontents.ModMain"
+    ]
+  },
+
+
+  "depends": {
+    "fabricloader": ">=0.7.2",
+    "fabric": "*",
+    "minecraft": "1.15.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}

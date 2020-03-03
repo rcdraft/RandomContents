@@ -1,0 +1,11 @@
+{
+    "item.randomcontents.essential": "Essential",
+    "item.randomcontents.essential.break": "Essential of everything just break!",
+    "item.randomcontents.essential.tooltip": "Watch out - It may break if you use it!",
+    "block.randomcontents.essential_block": "Essential Block",
+    "item.randomcontents.burnable_essential": "Burnable Essential",
+    "item.randomcontents.hand_grinder.tooltip": "Used to grind ores. Be careful.",
+    "block.randomcontents.color_panel": "Color Palette",
+    "item.randomcontents.enhanced_gold_ingot": "Enhanced Gold Ingot",
+    "block.randomcontents.invisible_light_source": "Invisible Light"
+}

@@ -1,0 +1,10 @@
+{
+    "item.randomcontents.essential": "基础物品",
+    "item.randomcontents.essential.break": "万物的基础破了！",
+    "item.randomcontents.essential.tooltip": "小心点，“使用”它会导致它破裂！",
+    "block.randomcontents.essential_block": "基础方块",
+    "item.randomcontents.burnable_essential": "可燃的基础物品",
+    "block.randomcontents.color_panel": "调色板",
+    "item.randomcontents.enhanced_gold_ingot": "增强金锭",
+    "block.randomcontents.invisible_light_source": "隐藏光源"
+}

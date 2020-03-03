@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "DDD",
+        "DGD",
+        "DDD"
+    ],
+    "key": {
+        "D": {
+            "item": "minecraft:coal_block"
+        },
+        "G": {
+            "item": "randomcontents:essential"
+        }
+    },
+    "result": {
+        "item": "randomcontents:burnable_essential",
+        "count": 8
+    }
+}

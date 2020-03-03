@@ -1,0 +1,32 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "LRL",
+        "GEB",
+        "LWL"
+    ],
+    "key": {
+        "L": {
+            "item": "minecraft:black_wool"
+        },
+        "R": {
+            "item": "minecraft:red_wool"
+        },
+        "G": {
+            "item": "minecraft:green_wool"
+        },
+        "B": {
+            "item": "minecraft:blue_wool"
+        },
+        "W": {
+            "item": "minecraft:white_wool"
+        },
+        "E": {
+            "item": "randomcontents:essential_block"
+        }
+    },
+    "result": {
+        "item": "randomcontents:color_panel",
+        "count": 8
+    }
+}
