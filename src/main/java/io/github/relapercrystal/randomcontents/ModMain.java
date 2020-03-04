@@ -28,23 +28,28 @@ import io.github.relapercrystal.randomcontents.items.HandGrinder;
 import io.github.relapercrystal.randomcontents.items.ItemEssential;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 
 public class ModMain implements ModInitializer {
 
-    public static final ItemEssential ESSENTIAL = new ItemEssential(new Item.Settings().group(ItemGroup.MISC));
-    public static final Item BURNABLE_ESSENTIAL = new Item(new Item.Settings().group(ItemGroup.MISC));
+    public static final ItemGroup CRYSTAL_GROUP = FabricItemGroupBuilder.build(new Identifier("randomcontents","crystal_group"), () -> new ItemStack(Items.CRAFTING_TABLE));    
+    public static final ItemEssential ESSENTIAL = new ItemEssential(new Item.Settings().group(CRYSTAL_GROUP));
+    public static final Item BURNABLE_ESSENTIAL = new Item(new Item.Settings().group(CRYSTAL_GROUP));
     public static final BlockEssential ESSENTIAL_BLOCK = new BlockEssential(FabricBlockSettings.of(Material.GLASS).build().strength(0.3F, 0.3F).nonOpaque());
     public static final Block COLOR_PANEL = new Block(FabricBlockSettings.of(Material.WOOL).build());
-    public static final HandGrinder HAND_GRINDER = new HandGrinder(new Item.Settings().group(ItemGroup.TOOLS).maxDamage(300));
-    public static final Item ENHANCED_GOLD_INGOT = new Item(new Item.Settings().group(ItemGroup.MISC).recipeRemainder(Items.GOLD_INGOT));
+    public static final HandGrinder HAND_GRINDER = new HandGrinder(new Item.Settings().group(CRYSTAL_GROUP).maxDamage(300));
+    public static final Item ENHANCED_GOLD_INGOT = new Item(new Item.Settings().group(CRYSTAL_GROUP).recipeRemainder(Items.GOLD_INGOT));
     public static final InvisibleLightSource INVISIBLE_LIGHT = new InvisibleLightSource(FabricBlockSettings.of(Material.GLASS).nonOpaque().noCollision().breakInstantly().lightLevel(14).build());
+    public static final Item COPY_ENGERY_PROCESSOR = new Item(new Item.Settings().group(CRYSTAL_GROUP));
+    
 
 	@Override
 	public void onInitialize() {
@@ -55,7 +60,6 @@ public class ModMain implements ModInitializer {
 		LogManager.getLogger().info("RandomContents, started");
         InitItem();
         InitBlock();
-        
 
         // Register Burnable Essential as Fuel
         FuelRegistry.INSTANCE.add(BURNABLE_ESSENTIAL, 10000);
@@ -65,11 +69,11 @@ public class ModMain implements ModInitializer {
     public void InitBlock()
     {
         Registry.register(Registry.BLOCK, new Identifier("randomcontents", "essential_block"), ESSENTIAL_BLOCK);
-        Registry.register(Registry.ITEM, new Identifier("randomcontents", "essential_block"), new BlockItem(ESSENTIAL_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        Registry.register(Registry.ITEM, new Identifier("randomcontents", "essential_block"), new BlockItem(ESSENTIAL_BLOCK, new Item.Settings().group(CRYSTAL_GROUP)));
         Registry.register(Registry.BLOCK, new Identifier("randomcontents", "color_panel"), COLOR_PANEL);
-        Registry.register(Registry.ITEM, new Identifier("randomcontents", "color_panel"), new BlockItem(COLOR_PANEL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        Registry.register(Registry.ITEM, new Identifier("randomcontents", "color_panel"), new BlockItem(COLOR_PANEL, new Item.Settings().group(CRYSTAL_GROUP)));
         Registry.register(Registry.BLOCK, new Identifier("randomcontents", "invisible_light_source"), INVISIBLE_LIGHT);
-        Registry.register(Registry.ITEM, new Identifier("randomcontents", "invisible_light_source"), new BlockItem(INVISIBLE_LIGHT, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        Registry.register(Registry.ITEM, new Identifier("randomcontents", "invisible_light_source"), new BlockItem(INVISIBLE_LIGHT, new Item.Settings().group(CRYSTAL_GROUP)));
     }
 
     public void InitItem()
@@ -78,5 +82,6 @@ public class ModMain implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier("randomcontents", "burnable_essential"), BURNABLE_ESSENTIAL);
         Registry.register(Registry.ITEM, new Identifier("randomcontents", "hand_grinder"), HAND_GRINDER);
         Registry.register(Registry.ITEM, new Identifier("randomcontents", "enhanced_gold_ingot"), ENHANCED_GOLD_INGOT);
+        Registry.register(Registry.ITEM, new Identifier("randomcontents", "copy_engery_processor"), COPY_ENGERY_PROCESSOR);
     }
 }
