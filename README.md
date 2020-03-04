@@ -1,6 +1,6 @@
 # More Elements
 
-![GitHub Workflow Status]("https://img.shields.io/github/workflow/status/rcdraft/RandomContents/Java%20CI?style=flat-square")
+![GitHub Workflow Status]("https://img.shields.io/github/workflow/status/rcdraft/RandomContents/LoomBuild?style=flat-square")
 ![GitHub](https://img.shields.io/github/license/rcdraft/RandomContents?color=blueviolet&style=flat-square)
 
 This Mod is a random create just put something into.
