@@ -6,5 +6,6 @@
     "item.randomcontents.burnable_essential": "可燃的基础物品",
     "block.randomcontents.color_panel": "调色板",
     "item.randomcontents.enhanced_gold_ingot": "增强金锭",
-    "block.randomcontents.invisible_light_source": "隐藏光源"
+    "block.randomcontents.invisible_light_source": "隐藏光源",
+    "item.randomcontents.copy_engery_processor": "可再生能量处理器"
 }
