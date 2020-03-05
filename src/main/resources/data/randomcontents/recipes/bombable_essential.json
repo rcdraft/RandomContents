@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "T ",
+        " E"
+    ],
+    "key": {
+        "T": {
+            "item": "minecraft:tnt"
+        },
+        "E": {
+            "item": "randomcontents:essential"
+        }
+    },
+    "result": {
+        "item": "randomcontents:bombable_essential",
+        "count": 8
+    }
+}

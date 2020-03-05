@@ -11,5 +11,9 @@
     "item.randomcontents.copy_engery_processor": "Copy Engery Processor",
     "item.randomcontents.enhanced_gold_wire": "Enhanced Gold Wire",
     "itemgroup.randomcontents.crystal_group": "Random Contents",
-    "item.randomcontents.copy_engery_receiver": "Copy Engery Receiver"
+    "item.randomcontents.copy_engery_receiver": "Copy Engery Receiver",
+    "item.randomcontents.bombable_essential": "Bombable Essential",
+    "item.randomcontents.bombable_essential.tooltip1": "This could explode, ",
+    "item.randomcontents.bombable_essential.tooltip2": "proceed with caution.",
+    "item.randomcontents.bombable_essential.break": "It's now exploded, because it's break."
 }

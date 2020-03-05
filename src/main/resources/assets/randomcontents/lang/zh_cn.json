@@ -10,5 +10,9 @@
     "item.randomcontents.copy_engery_processor": "可再生能量处理器",
     "item.randomcontents.enhanced_gold_wire": "增强金导线",
     "itemgroup.randomcontents.crystal_group": "随意内容",
-    "item.randomcontents.copy_engery_receiver": "可再生能量接收器"
+    "item.randomcontents.copy_engery_receiver": "可再生能量接收器",
+    "item.randomcontents.bombable_essential": "可引爆的基础物品",
+    "item.randomcontents.bombable_essential.tooltip1": "这东西可能会爆炸，",
+    "item.randomcontents.bombable_essential.tooltip2": "谨慎行事。",
+    "item.randomcontents.bombable_essential.break": "因为它破裂，里面的 TNT 被引爆了。"
 }
