@@ -54,6 +54,7 @@ public class ModMain implements ModInitializer {
     public static final Item ENHANCED_GOLD_WIRE = new Item(new Item.Settings().group(CRYSTAL_GROUP));
     public static final Item COPY_ENGERY_RECEIVER = new Item(new Item.Settings().group(CRYSTAL_GROUP));
     public static final Item CHARGED_BOW = new Item(new Item.Settings().maxDamage(684).group(CRYSTAL_GROUP));
+    public static final Item BOMBABLE_ESSENTIAL = new Item(new Item.Settings().group(CRYSTAL_GROUP));
     // public static final PickaxeItem CHARGED_DIAMOND_PICKAXE = new PickaxeItem(ChargedDiamond);
 
 	@Override
@@ -91,5 +92,6 @@ public class ModMain implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier("randomcontents", "enhanced_gold_wire"), ENHANCED_GOLD_WIRE);
         Registry.register(Registry.ITEM, new Identifier("randomcontents", "copy_engery_receiver"), COPY_ENGERY_RECEIVER);
         // Registry.register(Registry.ITEM, new Identifier("randomcontents", "charged_bow"), CHARGED_BOW);
+        Registry.register(Registry.ITEM, new Identifier("randomcontents", "bombable_essential"), BOMBABLE_ESSENTIAL)
     }
 }
