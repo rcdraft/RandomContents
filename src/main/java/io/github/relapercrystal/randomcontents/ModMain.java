@@ -92,6 +92,6 @@ public class ModMain implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier("randomcontents", "enhanced_gold_wire"), ENHANCED_GOLD_WIRE);
         Registry.register(Registry.ITEM, new Identifier("randomcontents", "copy_engery_receiver"), COPY_ENGERY_RECEIVER);
         // Registry.register(Registry.ITEM, new Identifier("randomcontents", "charged_bow"), CHARGED_BOW);
-        Registry.register(Registry.ITEM, new Identifier("randomcontents", "bombable_essential"), BOMBABLE_ESSENTIAL)
+        Registry.register(Registry.ITEM, new Identifier("randomcontents", "bombable_essential"), BOMBABLE_ESSENTIAL);
     }
 }
