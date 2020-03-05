@@ -24,6 +24,7 @@ import org.apache.logging.log4j.LogManager;
 
 import io.github.relapercrystal.randomcontents.blocks.BlockEssential;
 import io.github.relapercrystal.randomcontents.blocks.InvisibleLightSource;
+import io.github.relapercrystal.randomcontents.items.BombableEssential;
 import io.github.relapercrystal.randomcontents.items.HandGrinder;
 import io.github.relapercrystal.randomcontents.items.ItemEssential;
 // import io.github.relapercrystal.randomcontents.items.materials.ChargedDiamond;
@@ -54,7 +55,7 @@ public class ModMain implements ModInitializer {
     public static final Item ENHANCED_GOLD_WIRE = new Item(new Item.Settings().group(CRYSTAL_GROUP));
     public static final Item COPY_ENGERY_RECEIVER = new Item(new Item.Settings().group(CRYSTAL_GROUP));
     public static final Item CHARGED_BOW = new Item(new Item.Settings().maxDamage(684).group(CRYSTAL_GROUP));
-    public static final Item BOMBABLE_ESSENTIAL = new Item(new Item.Settings().group(CRYSTAL_GROUP));
+    public static final BombableEssential BOMBABLE_ESSENTIAL = new BombableEssential(new Item.Settings().group(CRYSTAL_GROUP));
     // public static final PickaxeItem CHARGED_DIAMOND_PICKAXE = new PickaxeItem(ChargedDiamond);
 
 	@Override
