@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "item": "randomcontents:enhanced_gold_ingot"
+    },
+    "result": "randomcontents:enhanced_gold_wire",
+    "experience": 0.7,
+    "cookingtime": 200
+}

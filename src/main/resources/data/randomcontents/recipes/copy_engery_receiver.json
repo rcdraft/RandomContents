@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "EH",
+        "LP"
+    ],
+    "key": {
+        "P": {
+            "item": "randomcontents:copy_engery_processor"
+        },
+        "H": {
+            "item": "randomcontents:hand_grinder"
+        },
+        "L": {
+            "item": "minecraft:lava_bucket"
+        },
+        "E": {
+            "item": "randomcontents:essential"
+        }
+    },
+    "result": {
+        "item": "randomcontents:copy_engery_receiver",
+        "count": 3
+    }
+}

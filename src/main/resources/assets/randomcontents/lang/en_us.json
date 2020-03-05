@@ -8,5 +8,8 @@
     "block.randomcontents.color_panel": "Color Palette",
     "item.randomcontents.enhanced_gold_ingot": "Enhanced Gold Ingot",
     "block.randomcontents.invisible_light_source": "Invisible Light",
-    "item.randomcontents.copy_engery_processor": "Copy Engery Processor"
+    "item.randomcontents.copy_engery_processor": "Copy Engery Processor",
+    "item.randomcontents.enhanced_gold_wire": "Enhanced Gold Wire",
+    "itemgroup.randomcontents.crystal_group": "Random Contents",
+    "item.randomcontents.copy_engery_receiver": "Copy Engery Receiver"
 }

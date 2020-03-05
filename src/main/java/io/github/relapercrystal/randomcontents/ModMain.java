@@ -26,6 +26,7 @@ import io.github.relapercrystal.randomcontents.blocks.BlockEssential;
 import io.github.relapercrystal.randomcontents.blocks.InvisibleLightSource;
 import io.github.relapercrystal.randomcontents.items.HandGrinder;
 import io.github.relapercrystal.randomcontents.items.ItemEssential;
+// import io.github.relapercrystal.randomcontents.items.materials.ChargedDiamond;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
@@ -37,6 +38,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+// import net.minecraft.item.PickaxeItem;
 
 public class ModMain implements ModInitializer {
 
@@ -49,7 +51,10 @@ public class ModMain implements ModInitializer {
     public static final Item ENHANCED_GOLD_INGOT = new Item(new Item.Settings().group(CRYSTAL_GROUP).recipeRemainder(Items.GOLD_INGOT));
     public static final InvisibleLightSource INVISIBLE_LIGHT = new InvisibleLightSource(FabricBlockSettings.of(Material.GLASS).nonOpaque().noCollision().breakInstantly().lightLevel(14).build());
     public static final Item COPY_ENGERY_PROCESSOR = new Item(new Item.Settings().group(CRYSTAL_GROUP));
-    
+    public static final Item ENHANCED_GOLD_WIRE = new Item(new Item.Settings().group(CRYSTAL_GROUP));
+    public static final Item COPY_ENGERY_RECEIVER = new Item(new Item.Settings().group(CRYSTAL_GROUP));
+    public static final Item CHARGED_BOW = new Item(new Item.Settings().maxDamage(684).group(CRYSTAL_GROUP));
+    // public static final PickaxeItem CHARGED_DIAMOND_PICKAXE = new PickaxeItem(ChargedDiamond);
 
 	@Override
 	public void onInitialize() {
@@ -83,5 +88,8 @@ public class ModMain implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier("randomcontents", "hand_grinder"), HAND_GRINDER);
         Registry.register(Registry.ITEM, new Identifier("randomcontents", "enhanced_gold_ingot"), ENHANCED_GOLD_INGOT);
         Registry.register(Registry.ITEM, new Identifier("randomcontents", "copy_engery_processor"), COPY_ENGERY_PROCESSOR);
+        Registry.register(Registry.ITEM, new Identifier("randomcontents", "enhanced_gold_wire"), ENHANCED_GOLD_WIRE);
+        Registry.register(Registry.ITEM, new Identifier("randomcontents", "copy_engery_receiver"), COPY_ENGERY_RECEIVER);
+        // Registry.register(Registry.ITEM, new Identifier("randomcontents", "charged_bow"), CHARGED_BOW);
     }
 }

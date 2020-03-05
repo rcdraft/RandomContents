@@ -7,5 +7,8 @@
     "block.randomcontents.color_panel": "调色板",
     "item.randomcontents.enhanced_gold_ingot": "增强金锭",
     "block.randomcontents.invisible_light_source": "隐藏光源",
-    "item.randomcontents.copy_engery_processor": "可再生能量处理器"
+    "item.randomcontents.copy_engery_processor": "可再生能量处理器",
+    "item.randomcontents.enhanced_gold_wire": "增强金导线",
+    "itemgroup.randomcontents.crystal_group": "随意内容",
+    "item.randomcontents.copy_engery_receiver": "可再生能量接收器"
 }

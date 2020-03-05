@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "EEE",
+        "ENE",
+        "DED"
+    ],
+    "key": {
+        "E": {
+            "item": "randomcontents:essential"
+        },
+        "D": {
+            "item": "minecraft:diamond"
+        },
+        "I": {
+            "item": "randomcontents:enhanced_gold_ingot"
+        },
+        "N": {
+            "item": "minecraft:nether_star"
+        }
+    },
+    "result": {
+        "item": "randomcontents:copy_engery_processor",
+        "count": 3
+    }
+}
